@@ -4,6 +4,7 @@ import './src/function.dart' as function;
 import './src/operator.dart' as Operator;
 import './src/exception.dart' as exception;
 import './src/clazz.dart' as clazz;
+import './src/library.dart' as mlibrary;
 
 main(params) {
   print(params);
@@ -15,4 +16,5 @@ main(params) {
   Operator.run();
   exception.run();
   clazz.run();
+  mlibrary.run();
 }

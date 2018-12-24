@@ -9,11 +9,14 @@ void run(){
   } 
   on StudyException catch(e){
     print("StudyException:$e");
-    throw "hello";
   }
   catch (e) {
     print(e);
-    throw "hello";
+    try {
+      throw "hello";
+    } catch (e) {
+      print(e);
+    }
   }
   finally{
     print("end");
